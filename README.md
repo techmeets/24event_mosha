@@ -17,7 +17,6 @@ CSS ファイルはなく、HTML ファイル内の style タグで記述され�
 border_element.html
 ```
 
-対象箇所:
 ![スクリーンショット 2020-10-23 10 28 31](https://user-images.githubusercontent.com/52241300/96997487-d3438180-156c-11eb-8190-b1f05c81dc4f.png)
 ![スクリーンショット 2020-10-23 10 22 09](https://user-images.githubusercontent.com/52241300/96997489-d5a5db80-156c-11eb-8e2f-8045744a8cf3.png)
 
@@ -33,7 +32,6 @@ pseudo_element.html
 background_contrast.html
 ```
 
-対象箇所:
 ![スクリーンショット 2020-10-23 11 47 23](https://user-images.githubusercontent.com/52241300/96997466-cb83dd00-156c-11eb-8e1a-31e5f61eecbe.png)
 
 - コンテンツのグリッド配置
@@ -42,7 +40,6 @@ background_contrast.html
 grid_layout.html
 ```
 
-対象箇所:
 ![スクリーンショット 2020-10-23 12 59 34](https://user-images.githubusercontent.com/52241300/96997416-b1e29580-156c-11eb-9d3a-88b19f9a3245.png)
 
 ![スクリーンショット 2020-10-23 13 00 01](https://user-images.githubusercontent.com/52241300/96990121-a473de00-1561-11eb-891f-84acaf90481f.png)
