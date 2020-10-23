@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+.Ireland{
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 10px #999;    
+}
+
+.Ireland::before, .Ireland::after {
+  content: "";
+  width: 33%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.Ireland::before {
+  background: #0E9D61;
+    left: 0px;
+    
+}
+.Ireland::after {
+  background: #FF893C;
+  right: 0px;
+}
+
+.Japan{
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 0 10px #999;
+    
+}
+
+.Japan::after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    background: #BD0029;
+    left: 90px;
+    top: 40px;
+}
+
+.Germany{
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    background: #DE0100;
+    position: relative;
+    box-shadow: 0 0 10px #999;    
+}
+
+.Germany::before, .Germany::after {
+  content: "";
+  width: 100%;
+  height: 33%;
+  position: absolute;
+  z-index: 1;
+}
+
+.Germany::before {
+    background: #000;
+}
+
+.Germany::after {
+    bottom: 0px;
+    background: #FFCF01
+}
+
+.Benin {
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    background: #018850;
+    position: relative;
+    box-shadow: 0 0 10px #999;    
+}
+
+.Benin::before, .Benin::after {
+  content: "";
+  width: 190px;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+}
+
+.Benin::before {
+    background: #FDD20D;
+    right: 0px;
+}
+
+.Benin::after {
+    background: #E80828;
+    right: 0px;
+    bottom: 0px;
+}
+
+.Ukrayina {
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+    background: #FFD600;
+    position: relative;
+    box-shadow: 0 0 10px #999;   
+}
+
+.Ukrayina::before {
+    content: "";
+    width: 300px;
+    height: 100px;
+    background: #005BBC;
+    position: absolute;
+    z-index: 1;
+}
+
+ul.arrowList li{
+	list-style:none;
+	padding-left:1.5rem;
+	position:relative;
+}
+ul.arrowList li:before,
+ul.arrowList li:after{
+	content:"";
+	display:block;
+	position:absolute;
+}
+ul.arrowList li:before{
+	width:12px;height:12px;
+	border-radius:2px;
+	background:#8CC4D9;
+	left:0;
+	top:5px;
+}
+ul.arrowList li:after{
+	border:3px solid transparent;
+	border-left-color:#fff;
+	left:5px;
+	top:8px;
+}
+</style>
+</head>
+<body>
+<div class="Ireland"></div>
+    <p>アイルランド</p>
+    <div class="Japan"></div>
+    <p>日本</p>
+    <div class="Germany"></div>
+    <p>ドイツ</p>
+    <div class="Benin"></div>
+    <p>ベナン</p>
+    <div class="Ukrayina"></div>
+    <p>ウクライナ</p>
+<ul class='arrowList'>
+	<li>List 1</li>
+	<li>List 2</li>
+	<li>List 3</li>
+</ul>
+
+<script src="filesystem:chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/temporary/script.js">
+</script>
+</body>
+</html>

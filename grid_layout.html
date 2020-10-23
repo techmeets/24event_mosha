@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+*{
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+}
+h2{
+text-align:center;
+}
+.grid-content{
+  box-sizing: border-box;
+  width: calc(100%/3);
+  display: inline-block
+}
+.grid-content img{
+  width: 100%;
+  height: auto;
+}
+.grid-box{
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* pattern2 */
+.grid-flex-box{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid-flex-content{
+  flex-basis: calc(100%/3);
+}
+
+
+.grid {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, calc(100%/3));
+}
+
+
+</style>
+</head>
+<body>
+
+<h2>Inline-blockを用いた方法</h2>
+<!-- pattern1 -->
+<div class='grid-box'>
+  <div class='grid-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+</div><div class='grid-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div><div class='grid-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p></div>  <div class='grid-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+</div><div class='grid-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div><div class='grid-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p></div>
+</div>
+<h2>Flexを用いた方法</h2>
+<!-- pattern2 -->
+<div class='grid-flex-box'>
+  <div class='grid-flex-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+</div><div class='grid-flex-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+  </div><div class='grid-flex-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p></div>
+<div class='grid-flex-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p></div>
+  <div class='grid-flex-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p></div>
+</div>
+
+<h2>Display　Gridを用いた方法</h2>
+<div class='grid'>
+  <div class='grid-flex-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p></div>
+  <div class='grid-flex-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p></div><div class='grid-flex-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p></div>
+  <div class='grid-flex-content'>
+  <img src="https://techmeets.jp/wp-content/uploads/2019/01/top.jpg" alt="">
+  <h3>テキストテキスト</h3>
+  <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p></div>
+</div>
+
+
+
+<script src="filesystem:chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/temporary/script.js">
+</script>
+</body>
+</html>

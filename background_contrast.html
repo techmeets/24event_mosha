@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+#first-view{
+  background-image: url('https://techmeets.jp/wp-content/uploads/2019/01/top.jpg');
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  height: 400px;
+  position: relative;
+  z-index: 0;
+}
+#first-view::before{
+    content: '';
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background: inherit;
+  filter: brightness(0.5);
+  z-index: -1;
+}
+.first-view-text{
+  text-align: center;
+  padding-top: calc(400px / 2);
+  font-size: 30px;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<section>
+  <div id='first-view'>
+    <div class='first-view-text'>Techmeets</div>
+  </div>
+</section>
+
+<script src="filesystem:chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/temporary/script.js">
+</script>
+</body>
+</html>

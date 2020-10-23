@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+
+.bar{
+  position: relative;
+}
+
+.bar::after{
+  content: '';
+  position: absolute;
+  width: 30px;
+  border-top: 2px solid black;
+  top: 30px;
+  transform:skewY(45deg);
+}
+
+.bar::before{
+  content: '';
+  position: absolute;
+  width: 60px;
+/*   border-top: 2px solid black; */
+  top: calc(30px + 15px);
+  left: 30px;
+  height: 2px;
+  background: black;
+}
+</style>
+</head>
+<body>
+<div>
+  <div class='bar'>
+  </div>
+</div>
+
+<script src="filesystem:chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/temporary/script.js">
+</script>
+</body>
+</html>
